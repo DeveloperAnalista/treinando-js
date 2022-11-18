@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <script src="scripts.js"></script>
+    
+  </body>
+</html>var idade=9;// idade da criança;
+var altura= 148; // altura da criança (em cm)
+
+// Operador lógico "se"
+if((idade >=7 && altura >=154)|| idade >= 10){
+    document.write("Pode andar no banco da frente ");
+}
+else{ document.write("Não pode andar no banco da frente.");
+}
+// separando os códigos
+document.write ("<br><br>");
+var tempo = true;
+var dinheiro = false;
+
+// Multiplos "se"
+if(tempo) {
+ // verifico dinheiro {
+    if (dinheiro) {
+        document.write("ferias!=D");
+    }else
+    ( document.write("sem ferias.=("));
+}
+
+// Separando os codigos
+document.write("<br></br>");
+
+var competencia=0;
+var riqueza=0;
+if (competencia){
+    document.write("sucesso!");
+}
+else {
+    if (riqueza){
+        document.write("sucesso");
+    }
+    else {
+        document.write("trabalha");
+    }
+}
+
+// Separando os codigos
+document.write("<br></br>");
+
+if (competencia||riqueza){
+    document.write("sucesso");
+    }
+    else {document.write("trabalho")};
+    
+    // Separador de codigos
+    document.write("<br><br>");
+    dia= null;
+    if(!dia) document.write ("noite");
+    else document.write("dia"); 
+
+    // Separando os codigos
+document.write("<br></br>");
+
+var Altura= 1.74; // altura do professor;
+var Peso= 99; // Peso do professor  (em imc)
+var imc= Peso/(Altura*Altura);
+var pesoMinimoIdeal=18.5 * Altura* Altura;
+var PesoMaximoIdeal=25*Altura*Altura;
+
+if(imc <18.5){
+    document.write("Magreza. coma bacon.");
+}
+if( imc>= 25 && imc < 30){
+    document.write( "Sobrepeso. Como mais salada");
+}
+if( imc > 30 && imc <35 ){
+document.write ("obesidade. Melhore diet");}
+
+if (imc>= 40){ 
+    document.write ("obesidade grave");}
+    
+    document.write("<br></br>");
+
+var diferença;
+
+if(Peso < pesoMinimoIdeal){
+    diferença=pesoMinimoIdeal-Peso;
+    document.write ("Você Precisa ganhar " + diferença + " quilos.")}
+else{
+    if(Peso> PesoMaximoIdeal){
+        diferença = Peso - PesoMaximoIdeal
+        document.write ("Você precisa perder "+ diferença + " quilos.")
+    } else {
+        document.write("Continue assim.")
+    }html {
+    background-image: linear-gradient( #202124, #000);
+    height: 100%;
+}
+body {
+    margin: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    color: #fff;
+}
+}
